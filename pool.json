@@ -21,11 +21,6 @@
             "author": "NavyEOD_24"
         },
         {
-            "name": "Kcode1974",
-            "href": "http://worldsoc.wikidot.com/kcode1974",
-            "author": "assailant"
-        },
-        {
             "name": "CHE-038 - Toxic Obelisk (Classified)",
             "href": "http://worldsoc.wikidot.com/dec-che-038",
             "author": "NavyEOD_24"
@@ -99,6 +94,91 @@
             "name": "VRF-001-HQ - Site Omega (Classified)",
             "href": "http://worldsoc.wikidot.com/dec-vrf-001-hq",
             "author": "NavyEOD_24"
+        },
+        {
+            "name": "VRF-063 - Site \"Mountain's Peak\"",
+            "href": "http://worldsoc.wikidot.com/vrf-063",
+            "author": "NavyEOD_24"
+        },
+        {
+            "name": "WT-MCH (Classified)",
+            "href": "http://worldsoc.wikidot.com/dec-wt-mech",
+            "author": "NavyEOD_24"
+        },
+        {
+            "name": "KAT-002 - Golems",
+            "href": "http://worldsoc.wikidot.com/kat-002",
+            "author": "NavyEOD_24"
+        },
+        {
+            "name": "KAT-002 - Golems (Classified)",
+            "href": "http://worldsoc.wikidot.com/dec-kat-002",
+            "author": "NavyEOD_24"
+        },
+        {
+            "name": "KAT-001 - CLASSIFIED",
+            "href": "http://worldsoc.wikidot.com/kat-001",
+            "author": "NavyEOD_24"
+        },
+        {
+            "name": "Everdawn Corporation",
+            "href": "http://worldsoc.wikidot.com/everdawn-corporation",
+            "author": "NavyEOD_24"
+        },
+        {
+            "name": "Everdawn Corporation (Classified)",
+            "href": "http://worldsoc.wikidot.com/dec-everdawn-corporation",
+            "author": "NavyEOD_24"
+        },
+        {
+            "name": "KAT-001 - The Amalgam (Classified)",
+            "href": "http://worldsoc.wikidot.com/dec-kat-001",
+            "author": "NavyEOD_24"
+        },
+        {
+            "name": "CHE-041 - The Voynich Manuscript (Classified)",
+            "href": "http://worldsoc.wikidot.com/dec-che-041",
+            "author": "NavyEOD_24"
+        },
+        {
+            "name": "CHE-041 - The Voynich Manuscript",
+            "href": "http://worldsoc.wikidot.com/che-041",
+            "author": "NavyEOD_24"
+        },
+        {
+            "name": "Worldsoc Technologies (Classified)",
+            "href": "http://worldsoc.wikidot.com/dec-worldsoc-technologies",
+            "author": "NavyEOD_24"
+        },
+        {
+            "name": "Secure Access Portal",
+            "href": "http://worldsoc.wikidot.com/secure-access-portal",
+            "author": "NavyEOD_24"
+        },
+        {
+            "name": "Worldsoc Technologies",
+            "href": "http://worldsoc.wikidot.com/worldsoc-technologies",
+            "author": "NavyEOD_24"
+        },
+        {
+            "name": "Administrator Login Panel",
+            "href": "http://worldsoc.wikidot.com/administrator",
+            "author": "NavyEOD_24"
+        },
+        {
+            "name": "Secure Login",
+            "href": "http://worldsoc.wikidot.com/secure-login",
+            "author": "NavyEOD_24"
+        },
+        {
+            "name": "Guest Access Portal",
+            "href": "http://worldsoc.wikidot.com/guest-access-portal",
+            "author": "NavyEOD_24"
+        },
+        {
+            "name": "WT-INTRO",
+            "href": "http://worldsoc.wikidot.com/start",
+            "author": "assailant"
         }
     ]
 }
