@@ -1,0 +1,155 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Allerta+Stencil&family=Victor+Mono:wght@500&display=swap');
+
+        body {
+            background-color: rgb(15, 15, 15);
+            color: white;
+            font-family: 'Victor Mono', monospace;
+            overflow: hidden;
+        }
+
+        #argas {
+            text-align: center;
+            font-size: 70px;
+            font-weight: 100;
+            user-select: none;
+            color: rgb(255, 100, 15);
+            font-family: 'Allerta Stencil', sans-serif;
+            margin: 0px;
+        }
+
+        #search {
+            border: 0;
+            background: transparent;
+            width: 100%;
+            color: white;
+            font-size: 20px;
+        }
+
+        #search:focus-visible {
+            border: none;
+            outline: none;
+        }
+
+        #searchresults {
+            position: inherit;
+            display: flex;
+            flex-direction: column;
+            padding: 10px;
+            background: rgb(31, 31, 31);
+            height: 700px;
+            border-radius: 20px;
+            border: 3px solid white;
+            outline: 4px solid rgb(31, 31, 31);
+            overflow-y: scroll;
+            margin-top: 10px;
+        }
+
+        .searchresult a {
+            color: rgb(255, 100, 15);
+            text-decoration: none;
+            transition: color 0.5s;
+        }
+
+        a:before {
+            content: ".";
+            background: rgba(0, 0, 0, 0.5);
+            color: transparent;
+            display: block;
+            position: absolute;
+            z-index: 0;
+            transition: width 0.5s;
+            width: 0%;
+        }
+
+        .searchresult a:hover {
+            color: white;
+        }
+
+        .searchresult a:hover:before {
+            content: ".";
+            background: rgba(255, 255, 255, 0.1);
+            color: transparent;
+            display: block;
+            position: absolute;
+            z-index: 0;
+            transition: width 0.5s;
+            width: 90%;
+        }
+
+        .searchresult {
+            border-bottom: 2px solid;
+            padding-bottom: 15px;
+            background: rgb(10, 10, 10);
+            border-radius: 10px;
+            margin-top: 5px;
+            margin-bottom: 5px;
+        }
+
+        .searchresult>* {
+            margin: 10px;
+        }
+
+        #search {
+            padding: 11px;
+            background: rgb(31, 31, 31);
+            border-radius: 10px;
+        }
+
+        #searchresults::-webkit-scrollbar {
+            width: 10px;
+            border-radius: 50px;
+        }
+
+        /* Track */
+        #searchresults::-webkit-scrollbar-track {
+            background: rgb(13, 13, 13);
+        }
+
+        /* Handle */
+        #searchresults::-webkit-scrollbar-thumb {
+            background: rgb(60, 60, 60);
+        }
+
+        /* Handle on hover */
+        #searchresults::-webkit-scrollbar-thumb:hover {
+            background: rgb(120, 120, 120);
+        }
+
+        #introdiv {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            padding: 10px;
+            border-radius: 20px;
+            background-color: rgb(13, 13, 13);
+        }
+    </style>
+</head>
+
+<body>
+    <h1 id="argas">ARGAS</h1>
+    <input type="text" id="search" onkeydown="onSearch();" placeholder="Search Here">
+    <div id="searchresults">
+        <div id="introdiv">
+            <div style="font-size: 25px;">Automated Research & Goal Achieving System</div>
+            <br>
+            <p>The ARGAS system is here to help you find articles within the Worldsoc
+                database.</p>
+            <p>To engage with the ARGAS system, please input your desired search on the
+                input bar above.</p>
+            <img src="wsoc.png" style="width: 400px;">
+            <p style="opacity: 0.3; user-select: none;">PROVIDED BY PERITECH</p>
+        </div>
+    </div>
+    <script src="main.js"></script>
+</body>
+
+</html>
