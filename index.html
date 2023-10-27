@@ -54,33 +54,12 @@
         .searchresult a {
             color: rgb(255, 100, 15);
             text-decoration: none;
-            transition: color 0.5s;
-        }
-
-        a:before {
-            content: ".";
-            background: rgba(0, 0, 0, 0.5);
-            color: transparent;
-            display: block;
-            position: absolute;
-            z-index: 0;
-            transition: width 0.5s;
-            width: 0%;
+            transition: color 0.5s, background-color 0.5s;
         }
 
         .searchresult a:hover {
             color: white;
-        }
-
-        .searchresult a:hover:before {
-            content: ".";
-            background: rgba(255, 255, 255, 0.1);
-            color: transparent;
-            display: block;
-            position: absolute;
-            z-index: 0;
-            transition: width 0.5s;
-            width: 90%;
+            background-color: rgba(255, 255, 255, 0.3)
         }
 
         .searchresult {
