@@ -34,8 +34,6 @@ function calculateLevenshteinDistance(rstr1, rstr2, biasWeight=1) {
 
     // Calculate matching percentage
     const matchingPercentage = matchingCount / maxLen;
-
-    console.log(matchingPercentage, similarity);
     
     // Apply bias based on matching percentage
     const biasedSimilarity = (100 * similarity + 100 * biasWeight * matchingPercentage / 2) / (biasWeight + 1); 
