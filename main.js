@@ -1,4 +1,4 @@
-function calculateLevenshteinDistance(rstr1, rstr2) {
+function calculateLevenshteinDistance(rstr1, rstr2, biasWeight=1) {
     var str1 = rstr1.toLowerCase();
     var str2 = rstr2.toLowerCase();
     const len1 = str1.length + 1;
@@ -12,6 +12,7 @@ function calculateLevenshteinDistance(rstr1, rstr2) {
         dp[0].push(j);
     }
 
+    let matchingCount = 0;
     for (let i = 1; i < len1; i++) {
         for (let j = 1; j < len2; j++) {
             const cost = str1[i - 1] === str2[j - 1] ? 0 : 1;
@@ -20,12 +21,26 @@ function calculateLevenshteinDistance(rstr1, rstr2) {
                 dp[i][j - 1] + 1,
                 dp[i - 1][j - 1] + cost
             );
+            
+            // Count matching letters
+            if (cost === 0) {
+                matchingCount++;
+            }
         }
     }
 
     const maxLen = Math.max(str1.length, str2.length);
     const similarity = 1 - dp[len1 - 1][len2 - 1] / maxLen;
-    return similarity * 100; // return similarity percentage
+
+    // Calculate matching percentage
+    const matchingPercentage = matchingCount / maxLen;
+
+    console.log(matchingPercentage, similarity);
+    
+    // Apply bias based on matching percentage
+    const biasedSimilarity = (100 * similarity + 100 * biasWeight * matchingPercentage / 2) / (biasWeight + 1); 
+
+    return biasedSimilarity; // return biased similarity percentage
 }
 
 var jsonPool = {};
