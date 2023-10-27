@@ -85,6 +85,7 @@ function createDoc(qActer) {
     authorElement.innerHTML = author;
     headerElement.appendChild(hrefElement);
     hrefElement.href = href;
+    hrefElement.target = "_blank";
     hrefElement.innerHTML = name;
     var searchResult = document.createElement("div");
     searchResult.classList = "searchresult";
